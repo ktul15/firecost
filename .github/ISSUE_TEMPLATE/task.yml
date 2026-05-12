@@ -1,0 +1,28 @@
+name: Task
+description: Internal build-plan task
+title: "[TASK] "
+labels: []
+body:
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Outcome
+      description: One sentence — what will be true after this issue is closed.
+      placeholder: e.g. "Linter engine can load a ts-morph Project from a tsconfig.json path."
+    validations:
+      required: true
+  - type: textarea
+    id: dod
+    attributes:
+      label: Definition of Done
+      description: Bulleted checklist of acceptance criteria.
+      value: |
+        - [ ] Implementation complete
+        - [ ] Tests / fixtures added
+        - [ ] Docs updated where applicable
+        - [ ] PR merged to main
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes / Links
+      description: Related issues, BUILD_PLAN section, design refs.
