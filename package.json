@@ -13,9 +13,22 @@
     "node": "^22.0.0",
     "pnpm": "^9.0.0"
   },
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "clean": "turbo run clean",
+    "lint": "biome check .",
+    "lint:fix": "biome check --write .",
+    "typecheck": "turbo run typecheck",
+    "test": "vitest run",
+    "test:watch": "vitest watch",
+    "test:coverage": "vitest run --coverage",
+    "check": "pnpm lint && pnpm typecheck && pnpm test"
+  },
   "devDependencies": {
     "@biomejs/biome": "^2.0.0",
     "@firecost/config": "workspace:*",
+    "@vitest/coverage-v8": "^2.1.0",
     "turbo": "^2.3.3",
     "typescript": "^5.6.3",
     "vitest": "^2.1.0"
