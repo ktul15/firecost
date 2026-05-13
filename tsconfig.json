@@ -1,0 +1,4 @@
+{
+  "extends": "@firecost/config/tsconfig.base.json",
+  "files": []
+}
