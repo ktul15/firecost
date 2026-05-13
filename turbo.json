@@ -10,7 +10,8 @@
       "dependsOn": []
     },
     "typecheck": {
-      "dependsOn": ["^typecheck"]
+      "dependsOn": ["^typecheck"],
+      "inputs": ["src/**", "tsconfig*.json", "package.json"]
     },
     "test": {
       "dependsOn": ["^build"],

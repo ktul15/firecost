@@ -15,6 +15,9 @@
     "tsconfig.base.json",
     "biome.json"
   ],
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
   "publishConfig": {
     "access": "restricted"
   },
