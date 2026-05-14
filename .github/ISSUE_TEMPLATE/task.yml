@@ -1,7 +1,6 @@
 name: Task
 description: Internal build-plan task
-title: "[TASK] "
-labels: []
+title: ""
 body:
   - type: textarea
     id: outcome
@@ -20,7 +19,13 @@ body:
         - [ ] Implementation complete
         - [ ] Tests / fixtures added
         - [ ] Docs updated where applicable
-        - [ ] PR merged to main
+        - [ ] PR merged to dev
+  - type: input
+    id: task_id
+    attributes:
+      label: Task ID
+      description: BUILD_PLAN task ID (e.g. M0-09, M1-23). Leave blank for ad-hoc work.
+      placeholder: M0-09
   - type: textarea
     id: notes
     attributes:

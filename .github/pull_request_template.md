@@ -4,7 +4,9 @@
 
 ## Closes
 
-<!-- Closes #N — link to the task issue this PR completes -->
+Closes #<ISSUE_NUMBER>
+
+<!-- Issue number. Required. Every feature branch maps to exactly one issue. -->
 
 ## Changes
 
@@ -12,9 +14,10 @@
 
 ## Test plan
 
-- [ ] Unit tests pass (`pnpm turbo run test`)
-- [ ] Type-check passes (`pnpm turbo run typecheck`)
-- [ ] Lint passes (`pnpm turbo run lint`)
+- [ ] `pnpm lint` passes
+- [ ] `pnpm typecheck` passes
+- [ ] `pnpm test` passes
+- [ ] `pnpm check` passes (aggregate)
 - [ ] Manual verification described below
 
 ## Manual verification
@@ -24,3 +27,9 @@
 ## Risk / rollback
 
 <!-- What might go wrong; how to back out -->
+
+## Workflow checklist
+
+- [ ] Branched from `dev` as `feature/issue-<N>-<short-description>`
+- [ ] Development Workflow review completed (see CLAUDE.md § Development Workflow)
+- [ ] Will merge `--no-ff` into `dev` only; `main` untouched until phase end
