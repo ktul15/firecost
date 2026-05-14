@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Build plan + roadmap
+    url: https://github.com/ktul15/firecost/blob/main/docs/BUILD_PLAN.md
+    about: Milestone-by-milestone scope and task IDs.
+  - name: Product analysis
+    url: https://github.com/ktul15/firecost/blob/main/docs/firebase-cost-analysis.md
+    about: ICP, pricing, competitive landscape, v1 rule catalog.
+  - name: Contributor doctrine (CLAUDE.md)
+    url: https://github.com/ktul15/firecost/blob/main/CLAUDE.md
+    about: Strict git workflow, dev workflow, locked stack.
